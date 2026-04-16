@@ -1,89 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reishell Garilao | Portfolio</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-    </style>
-</head>
-<body class="bg-gray-50">
-
-    <!-- Header with Name and Section -->
-    <header class="bg-white shadow-sm sticky top-0 z-10">
-        <div class="max-w-6xl mx-auto px-4 py-6">
-            <div class="text-center">
-                <h1 class="text-3xl font-bold text-gray-800">Reishell S. Garilao</h1>
-                <p class="text-gray-500 mt-1">BSIT 3A | Web Systems & Technologies</p>
-            </div>
-        </div>
-    </header>
-
-    <main class="max-w-6xl mx-auto px-4 py-12">
-        <!-- Explanation of Web Server & File Server Relationship -->
-        <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg mb-12">
-            <h2 class="text-xl font-semibold text-blue-800 mb-2">🌐 How This Website Works</h2>
-            <p class="text-gray-700">This website is hosted on <strong class="font-semibold">Vercel (Web Server)</strong>. All images and project files are stored on and served directly from <strong class="font-semibold">Google Drive (File Server)</strong>. The web server only delivers the HTML/CSS/JS code, while the actual media files come from a separate file hosting service, demonstrating a clear separation of concerns between web and file servers.</p>
-        </div>
-
-        <!-- Hero Section -->
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">Reishell Garilao</h2>
-            <p class="text-xl text-gray-600 mb-6">Creative Professional</p>
-            <p class="text-gray-500 max-w-2xl mx-auto">A dedicated creative professional with expertise in design, development, and strategic thinking. Committed to delivering excellence in every project.</p>
-            <div class="flex justify-center gap-4 mt-8">
-                <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Get In Touch</a>
-                <a href="#works" class="border border-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-50 transition">View Works</a>
-            </div>
-        </div>
-
-        <!-- About Me Section -->
-        <div class="mb-16">
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">About Me</h3>
-            <p class="text-gray-600 leading-relaxed">Passionate about creating meaningful work that makes a difference. I combine creative thinking with technical skills to deliver impactful solutions.</p>
-        </div>
-
-        <!-- Works Section (Images from File Server) -->
-        <div id="works" class="mb-16">
-            <h3 class="text-2xl font-bold text-gray-800 mb-6">My Works</h3>
-            <div class="grid md:grid-cols-2 gap-6">
-                <!-- Work 1: PasaBuy -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="https://placehold.co/600x400?text=PasaBuy+Logo" alt="PasaBuy Logo" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h4 class="text-xl font-semibold">PasaBuy</h4>
-                        <p class="text-gray-600">Shared Purchasing and Route Matching Platform</p>
-                        <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mt-2">WebApp</span>
-                    </div>
-                </div>
-                <!-- Work 2: AquaBill -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="https://placehold.co/600x400?text=AquaBill+Logo" alt="AquaBill Logo" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h4 class="text-xl font-semibold">AquaBill</h4>
-                        <p class="text-gray-600">Water Billing System for Baranggay Pagkakaisa</p>
-                        <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded mt-2">System</span>
-                    </div>
-                </div>
-            </div>
-            <p class="text-sm text-gray-400 text-center mt-4">* Images are placeholders. Replace with actual Google Drive links.</p>
-        </div>
-
-        <!-- Contact Section -->
-        <div id="contact" class="bg-gray-100 p-6 rounded-lg">
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">Contact</h3>
-            <p class="text-gray-600">Email: reishellgarilao28@gmail.com</p>
-        </div>
-    </main>
-
-    <footer class="bg-white border-t py-6 mt-12">
-        <div class="max-w-6xl mx-auto px-4 text-center text-gray-500 text-sm">
-            <p>© 2026 Reishell Garilao. All images are served from Google Drive (File Server). Website hosted on Vercel (Web Server).</p>
-        </div>
-    </footer>
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
