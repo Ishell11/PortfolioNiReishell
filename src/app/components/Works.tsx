@@ -1,4 +1,4 @@
-import { ImageWithFallback } from './figma/ImageWithFallback';
+
 import { ExternalLink, Plus, Trash2, Upload } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
