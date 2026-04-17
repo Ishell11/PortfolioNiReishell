@@ -3,7 +3,12 @@ import { Upload, Edit2 } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export function Hero() {
-  const [profileImage, setProfileImage] = useState('https://drive.google.com/file/d/1-lD33BF6BNbP4jMoovsFs1XQAib_aIiE/view?usp=drive_link');
+  // ✅ FIXED: Use the direct image URL from Google Drive (file server)
+  // Original share link: https://drive.google.com/file/d/1-lD33BF6BNbP4jMoovsFs1XQAib_aIiE/view
+  // Converted to direct link: https://drive.google.com/uc?export=view&id=1-lD33BF6BNbP4jMoovsFs1XQAib_aIiE
+  const DEFAULT_IMAGE = 'https://drive.google.com/uc?export=view&id=1-lD33BF6BNbP4jMoovsFs1XQAib_aIiE';
+  
+  const [profileImage, setProfileImage] = useState(DEFAULT_IMAGE);
   const [name, setName] = useState('Reishell Garilao');
   const [title, setTitle] = useState('Creative Professional');
   const [bio, setBio] = useState('A dedicated creative professional with expertise in design, development, and strategic thinking. Committed to delivering excellence in every project.');
